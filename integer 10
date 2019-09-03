@@ -1,0 +1,21 @@
+/*Integer10
+Дано троьохзначне число. Вивести спочатку його останню цифру
+(одиниці), а потім — його средню цифру (десятки).
+*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	cout << "Введіть число" << endl;
+	int a;
+	cin >> a;
+	int x = a % 10;
+	a /= 10;
+	int y = a % 10;
+	cout << x << endl << y << endl;
+	return 0;
+}
