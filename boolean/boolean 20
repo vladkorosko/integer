@@ -1,0 +1,25 @@
+/*Boolean20
+Дано трицифрове число. Перевірити правдивість вислову:
+«Всі цифри даного числа різні».
+
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter number" << endl;
+	int n;
+	cin >> n;
+	int a = n % 10;
+	n /= 10;
+	int b = n % 10;
+	n /= 10;
+	if (a != b && b != n && a != n)
+		cout << "All numbers are different." << endl;
+	else
+		cout << "There are the same numbers.";
+	return 0;
+}
