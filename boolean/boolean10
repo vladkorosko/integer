@@ -1,0 +1,20 @@
+/*Boolean10
+Дано два цілих числа: A, B. Перевірити правдивість висловлювання:
+«Рівно одне з чисел A і B непарне».
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter numbers" << endl;
+	int a, b;
+	cin >> a >> b;
+	if (a % 2 == 1 && b % 2 != 1 || a % 2 != 1 && b % 2 == 1)
+		cout << "One of this number is odd." << endl;
+	else
+		cout << "Both of this numbers are odd or even." << endl;
+	return 0;
+}
