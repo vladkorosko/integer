@@ -1,0 +1,28 @@
+/*Boolean39
+Дано координати двох різних клітинок шахматної дошки x1, y1,
+x2, y2 (цілі числа, які належать діапазону 1–8). Перевірити правдивість вислову:
+«Ферзь за один хід може перейти з одного поля на друге».
+*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+   cout << "Enter the coordinates of first field" << endl;
+   int x1, y1;
+   cin >> x1 >> y1;
+   cout << "Enter the coordinates of second field" << endl;
+   int x2, y2;
+   cin >> x2 >> y2;
+   int a = abs(x1 - x2);
+   int b = abs(y1 - y2);
+   if (a == 0 || b == 0 || a == b)
+	   cout << "Outstanding move." << endl;
+   else
+	   cout << "This is imposible move." << endl;
+   return 0;
+}
+
